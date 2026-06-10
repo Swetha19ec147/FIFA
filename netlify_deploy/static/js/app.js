@@ -78,6 +78,10 @@ const TEAM_IDS = {
     'Tunisia': 47, 'Saudi Arabia': 48, 'Qatar': 49, 'Iraq': 50
 };
 
+// Central API Client Configuration
+const API_BASE = "https://fifa-ai-backend.onrender.com/api";
+const USE_MOCK_FALLBACK = true;
+
 // Real-World Kit Color Palette for Jerseys
 const TEAM_COLORS = {
     'Argentina': { primary: '#75AADB', secondary: '#FFFFFF' },
