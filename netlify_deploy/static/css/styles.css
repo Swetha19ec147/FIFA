@@ -1,18 +1,20 @@
 :root {
-    --bg-dark: #0A0A0C;
-    --bg-card: #111216;
-    --border-color: #2A2B30;
-    --text-main: #FFFFFF;
-    --text-muted: #8E92A3;
-    --accent-brand: #CCFF00; /* Neon Lime */
-    --accent-green: #00B16A;
-    --accent-red: #FF3333;
-    --accent-gold: #FFD700;
+    --bg-dark: #F4F6F9; /* Off-white bright background */
+    --bg-card: #FFFFFF; /* Pure white cards */
+    --border-color: #E2E8F0; /* Soft grey borders */
+    --text-main: #1A202C; /* Deep charcoal text */
+    --text-muted: #718096;
+    --accent-brand: #00B16A; /* FIFA Pitch Green */
+    --accent-blue: #00308F; /* Royal Blue */
+    --accent-red: #E53E3E;
+    --accent-gold: #D69E2E;
     
-    --font-heading: 'Oswald', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+
 
 
 /* Reset & Basics */
@@ -2023,32 +2025,60 @@ h1, h2, h3, h4, h5, h6, .nav-tab, .btn-primary {
     text-transform: uppercase;
 }
 
-/* Reference UI Overrides */
+
+/* Bright Professional 3D Overrides */
+body {
+    background-color: var(--bg-dark) !important;
+    background-image: none !important;
+    color: var(--text-main) !important;
+}
+
+.portal-hero {
+    background-image: linear-gradient(to bottom, rgba(0, 48, 143, 0.7), rgba(0, 177, 106, 0.4)), url('/static/img/bright_3d_stadium.png') !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
 .content-section, .timeline-event, .player-card, .group-card, .stat-card, .prediction-results {
     background: var(--bg-card) !important;
     border: 1px solid var(--border-color) !important;
-    border-radius: 8px !important;
-    backdrop-filter: none !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06), 0 4px 6px rgba(0,0,0,0.04) !important;
+    color: var(--text-main) !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    perspective: 1000px;
 }
 
-body {
-    background: var(--bg-dark) !important;
+/* Fix text colors inside cards */
+.hero-title { color: #FFFFFF !important; text-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+h1, h2, h3, h4, .match-team { color: var(--text-main) !important; text-shadow: none !important; }
+.match-score { color: var(--accent-brand) !important; }
+
+/* 3D Hover Animations */
+.timeline-event:hover, .player-card:hover, .group-card:hover, .match-item:hover {
+    transform: translateY(-8px) scale(1.02) rotateX(4deg) rotateY(-2deg) !important;
+    box-shadow: 0 20px 40px rgba(0, 177, 106, 0.15), 0 10px 15px rgba(0,0,0,0.05) !important;
+    border-color: var(--accent-brand) !important;
+    z-index: 10;
 }
 
+/* Buttons */
 .btn-primary {
-    background: var(--accent-brand) !important;
-    color: #000000 !important;
-    font-weight: 700 !important;
+    background: linear-gradient(135deg, var(--accent-brand), #00d981) !important;
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
     border: none !important;
-    border-radius: 4px !important;
-    padding: 0.8rem 1.5rem !important;
-    transition: transform 0.2s ease, filter 0.2s ease;
+    border-radius: 8px !important;
+    padding: 1rem 2rem !important;
+    box-shadow: 0 6px 15px rgba(0, 177, 106, 0.3) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 .btn-primary:hover {
-    transform: translateY(-2px) !important;
-    filter: brightness(1.2);
-    box-shadow: 0 0 15px rgba(204, 255, 0, 0.4) !important;
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 10px 25px rgba(0, 177, 106, 0.5) !important;
 }
 
 .live-dot.pulse {
@@ -2056,19 +2086,12 @@ body {
     animation: intensePulseRed 2s infinite !important;
 }
 
-@keyframes intensePulseRed {
-    0% { box-shadow: 0 0 0 0 rgba(255, 51, 51, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(255, 51, 51, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(255, 51, 51, 0); }
+/* Nav Tabs */
+.nav-tab { color: #FFFFFF !important; }
+.nav-tab.active {
+    color: var(--accent-brand) !important;
+    border-bottom: 4px solid var(--accent-brand) !important;
+    text-shadow: none !important;
 }
 
-.match-score, .match-team, .bracket-team-score {
-    font-family: var(--font-heading) !important;
-}
-
-/* Remove the old magenta/gold hover glows */
-.timeline-event:hover, .player-card:hover, .group-card:hover, .match-item:hover {
-    border-color: var(--accent-brand) !important;
-    box-shadow: 0 5px 15px rgba(204, 255, 0, 0.1) !important;
-    transform: translateY(-4px) scale(1.01) !important;
-}
+.timeline-event .text-muted { color: var(--text-muted) !important; }
