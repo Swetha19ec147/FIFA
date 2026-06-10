@@ -1892,3 +1892,65 @@ table, .group-standings-table {
     background-color: transparent !important;
     color: #000000 !important;
 }
+
+/* FIFA.COM LAYOUT OVERRIDES */
+.app-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 15, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+.fifa-hero-banner {
+    position: relative;
+    height: 60vh;
+    min-height: 500px;
+    background: url('/static/img/stadium_bg.png') center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    margin-bottom: 2rem;
+}
+.hero-gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+    z-index: 1;
+}
+.fifa-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+.hero-tag {
+    background: var(--accent-brand);
+    color: #000;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-weight: 800;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+.hero-title-main {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.hero-desc {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+.content-section {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 2rem;
+}

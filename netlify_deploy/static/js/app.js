@@ -1711,12 +1711,12 @@ function renderLiveMatchData(data) {
 
 
 function switchTab(tabId) {
-    document.querySelectorAll('.content-section').forEach(sec => sec.classList.remove('active'));
-    document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
-    
-    document.getElementById(`section-${tabId}`).classList.add('active');
-    document.getElementById(`tab-${tabId}`).classList.add('active');
-    activeTab = tabId;
+    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + tabId).classList.add('active');
+    const section = document.getElementById('section-' + tabId);
+    if(section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
 
 function switchSubTab(subTabId) {
