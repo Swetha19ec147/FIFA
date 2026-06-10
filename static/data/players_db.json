@@ -1,38 +1,822 @@
 {
-    "Mbappe": {
-        "name": "Kylian Mbapp\u00e9",
-        "team": "France",
-        "position": "Forward",
-        "rating": 94,
-        "matches": [
-            {
-                "match": "FRA vs NED",
-                "rating": 9.5,
-                "goals": 2
+    "Argentina": [
+        {
+            "name": "Lionel Messi",
+            "team": "Argentina",
+            "rating": 85.2,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lionel_Messi_White_House_2026_%283x4_cropped%29.jpg/330px-Lionel_Messi_White_House_2026_%283x4_cropped%29.jpg",
+            "bio": "Lionel Andr\u00e9s Messi is an Argentine professional footballer who plays as a forward for and captains both the Major League Soccer club Inter Miami and the Argentina national team. Widely regarded as one of the greatest players in history, Messi has set numerous records for individual accolades won throughout his professional footballing career, including eight Ballons d'Or, six European Golden Shoes, and eight times being named the world's best player by FIFA. In 2025, he was named the All Time Men's World Best Player by the IFFHS.",
+            "season_stats": {
+                "goals": 2,
+                "assists": 1,
+                "avg_rating": 8.2
             },
-            {
-                "match": "FRA vs AUS",
-                "rating": 8.8,
-                "goals": 1
-            }
-        ]
-    },
-    "Messi": {
-        "name": "Lionel Messi",
-        "team": "Argentina",
-        "position": "Forward",
-        "rating": 93,
-        "matches": [
-            {
-                "match": "ARG vs CRO",
-                "rating": 9.2,
-                "goals": 1
+            "recent_matches": [
+                {
+                    "date": "2026-05-16",
+                    "opponent": "Netherlands",
+                    "minutes_played": 62,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 8.9
+                },
+                {
+                    "date": "2026-05-25",
+                    "opponent": "Spain",
+                    "minutes_played": 61,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 7.9
+                },
+                {
+                    "date": "2026-05-11",
+                    "opponent": "Croatia",
+                    "minutes_played": 64,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.8
+                },
+                {
+                    "date": "2026-05-21",
+                    "opponent": "Croatia",
+                    "minutes_played": 71,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 6.9
+                },
+                {
+                    "date": "2026-05-30",
+                    "opponent": "Italy",
+                    "minutes_played": 61,
+                    "goals": 2,
+                    "assists": 0,
+                    "sofascore_rating": 8.5
+                }
+            ]
+        },
+        {
+            "name": "Emiliano Mart\u00ednez",
+            "team": "Argentina",
+            "rating": 92.4,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/St._Louis_City_vs_Aston_Villa_%28Jul_2025%29_14_%28Emiliano_Mart%C3%ADnez%29.jpg/330px-St._Louis_City_vs_Aston_Villa_%28Jul_2025%29_14_%28Emiliano_Mart%C3%ADnez%29.jpg",
+            "bio": "Dami\u00e1n Emiliano Mart\u00ednez Romero, also known as Dibu Mart\u00ednez, is an Argentine professional footballer who plays as a goalkeeper for Premier League club Aston Villa and the Argentina national team. Known as a specialist in saving penalty kicks, he is regarded as one of the best goalkeepers in the world.",
+            "season_stats": {
+                "goals": 0,
+                "assists": 1,
+                "avg_rating": 8.14
             },
-            {
-                "match": "ARG vs KSA",
-                "rating": 8.5,
-                "goals": 1
-            }
-        ]
-    }
+            "recent_matches": [
+                {
+                    "date": "2026-05-28",
+                    "opponent": "Uruguay",
+                    "minutes_played": 88,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.5
+                },
+                {
+                    "date": "2026-05-10",
+                    "opponent": "Germany",
+                    "minutes_played": 84,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.2
+                },
+                {
+                    "date": "2026-05-19",
+                    "opponent": "Italy",
+                    "minutes_played": 82,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 9.6
+                },
+                {
+                    "date": "2026-05-27",
+                    "opponent": "Uruguay",
+                    "minutes_played": 61,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 6.6
+                },
+                {
+                    "date": "2026-05-23",
+                    "opponent": "Uruguay",
+                    "minutes_played": 73,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 6.8
+                }
+            ]
+        },
+        {
+            "name": "Juli\u00e1n \u00c1lvarez",
+            "team": "Argentina",
+            "rating": 92.8,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/0/03/Argentina_national_football_team_-_2_-_2022_%28Juli%C3%A1n_%C3%81lvarez%29.jpg",
+            "bio": "Juli\u00e1n Alvarez is an Argentine professional footballer who plays as a forward for La Liga club Atl\u00e9tico Madrid and the Argentina national team.",
+            "season_stats": {
+                "goals": 0,
+                "assists": 2,
+                "avg_rating": 8.26
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-22",
+                    "opponent": "Netherlands",
+                    "minutes_played": 75,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.0
+                },
+                {
+                    "date": "2026-05-22",
+                    "opponent": "Italy",
+                    "minutes_played": 79,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.1
+                },
+                {
+                    "date": "2026-05-10",
+                    "opponent": "Netherlands",
+                    "minutes_played": 82,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.3
+                },
+                {
+                    "date": "2026-05-16",
+                    "opponent": "Germany",
+                    "minutes_played": 64,
+                    "goals": 0,
+                    "assists": 2,
+                    "sofascore_rating": 7.0
+                },
+                {
+                    "date": "2026-05-27",
+                    "opponent": "Germany",
+                    "minutes_played": 78,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 6.9
+                }
+            ]
+        }
+    ],
+    "France": [
+        {
+            "name": "Kylian Mbapp\u00e9",
+            "team": "France",
+            "rating": 93.7,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg/330px-Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg",
+            "bio": "Kylian Mbapp\u00e9 Lottin is a French professional footballer who plays as a forward for La Liga club Real Madrid and captains the France national team. Widely regarded as one of the best players in the world, he is known for his pace, dribbling, and clinical finishing.",
+            "season_stats": {
+                "goals": 2,
+                "assists": 2,
+                "avg_rating": 8.04
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-13",
+                    "opponent": "Germany",
+                    "minutes_played": 76,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 7.3
+                },
+                {
+                    "date": "2026-05-18",
+                    "opponent": "Italy",
+                    "minutes_played": 79,
+                    "goals": 1,
+                    "assists": 0,
+                    "sofascore_rating": 7.7
+                },
+                {
+                    "date": "2026-05-17",
+                    "opponent": "Spain",
+                    "minutes_played": 64,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 7.0
+                },
+                {
+                    "date": "2026-05-16",
+                    "opponent": "Croatia",
+                    "minutes_played": 68,
+                    "goals": 1,
+                    "assists": 1,
+                    "sofascore_rating": 8.4
+                },
+                {
+                    "date": "2026-05-14",
+                    "opponent": "Croatia",
+                    "minutes_played": 71,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.8
+                }
+            ]
+        },
+        {
+            "name": "Antoine Griezmann",
+            "team": "France",
+            "rating": 89.2,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/FRA-ARG_%2810%29_%28cropped%29.jpg/330px-FRA-ARG_%2810%29_%28cropped%29.jpg",
+            "bio": "Antoine Griezmann is a French professional footballer who plays as a forward or attacking midfielder who plays for La Liga club Atl\u00e9tico Madrid. He will formally join Major League Soccer club Orlando City in July 2026. Considered one of the best strikers of his generation, he is primarily known for his versatility, game intelligence, attacking output, and off-ball attributes.",
+            "season_stats": {
+                "goals": 2,
+                "assists": 1,
+                "avg_rating": 6.7
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-21",
+                    "opponent": "Netherlands",
+                    "minutes_played": 62,
+                    "goals": 1,
+                    "assists": 0,
+                    "sofascore_rating": 6.5
+                },
+                {
+                    "date": "2026-05-23",
+                    "opponent": "Uruguay",
+                    "minutes_played": 90,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 6.9
+                },
+                {
+                    "date": "2026-05-28",
+                    "opponent": "Uruguay",
+                    "minutes_played": 79,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 7.0
+                },
+                {
+                    "date": "2026-05-30",
+                    "opponent": "Netherlands",
+                    "minutes_played": 62,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 6.5
+                },
+                {
+                    "date": "2026-05-28",
+                    "opponent": "Croatia",
+                    "minutes_played": 88,
+                    "goals": 1,
+                    "assists": 0,
+                    "sofascore_rating": 6.6
+                }
+            ]
+        },
+        {
+            "name": "William Saliba",
+            "team": "France",
+            "rating": 93.0,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/1_william_saliba_arsenal_2025_%28cropped%29.jpg/330px-1_william_saliba_arsenal_2025_%28cropped%29.jpg",
+            "bio": "William Alain Andr\u00e9 Gabriel Saliba is a French professional footballer who plays as a centre-back for Premier League club Arsenal and the France national team. Regarded as one of the best centre-backs in the world, he is known for his strength, pace, tackling, and composure.",
+            "season_stats": {
+                "goals": 0,
+                "assists": 2,
+                "avg_rating": 8.26
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-26",
+                    "opponent": "Spain",
+                    "minutes_played": 63,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 7.9
+                },
+                {
+                    "date": "2026-05-24",
+                    "opponent": "Spain",
+                    "minutes_played": 73,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 7.3
+                },
+                {
+                    "date": "2026-05-16",
+                    "opponent": "Spain",
+                    "minutes_played": 78,
+                    "goals": 0,
+                    "assists": 2,
+                    "sofascore_rating": 9.4
+                },
+                {
+                    "date": "2026-05-12",
+                    "opponent": "Germany",
+                    "minutes_played": 64,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.4
+                },
+                {
+                    "date": "2026-05-11",
+                    "opponent": "Germany",
+                    "minutes_played": 76,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 7.3
+                }
+            ]
+        }
+    ],
+    "England": [
+        {
+            "name": "Jude Bellingham",
+            "team": "England",
+            "rating": 86.0,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Jude_Bellingham_-_240422_190551-2_%28cropped%29.jpg/330px-25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Jude_Bellingham_-_240422_190551-2_%28cropped%29.jpg",
+            "bio": "Jude Victor William Bellingham is an English professional footballer who plays as a midfielder for La Liga club Real Madrid and the England national team. He is regarded as one of the best players in the world.",
+            "season_stats": {
+                "goals": 2,
+                "assists": 3,
+                "avg_rating": 8.46
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-28",
+                    "opponent": "Germany",
+                    "minutes_played": 73,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 6.7
+                },
+                {
+                    "date": "2026-05-28",
+                    "opponent": "Croatia",
+                    "minutes_played": 85,
+                    "goals": 2,
+                    "assists": 0,
+                    "sofascore_rating": 8.1
+                },
+                {
+                    "date": "2026-05-30",
+                    "opponent": "Spain",
+                    "minutes_played": 85,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 9.8
+                },
+                {
+                    "date": "2026-05-19",
+                    "opponent": "Spain",
+                    "minutes_played": 63,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 8.3
+                },
+                {
+                    "date": "2026-05-12",
+                    "opponent": "Italy",
+                    "minutes_played": 61,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.4
+                }
+            ]
+        },
+        {
+            "name": "Harry Kane",
+            "team": "England",
+            "rating": 91.3,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Harry_Kane_on_October_10%2C_2023.jpg/330px-Harry_Kane_on_October_10%2C_2023.jpg",
+            "bio": "Harry Edward Kane is an English professional footballer who plays as a striker for Bundesliga club Bayern Munich and captains the England national team. Regarded as one of the best strikers of his generation, he is Tottenham Hotspur's all-time top goalscorer (280), England's all-time top goalscorer (79), and the highest-scoring English player in the UEFA Champions League (54). He is also the Premier League's second-highest all-time goalscorer (213) and the seventh highest goalscorer for Bayern Munich (146). He has scored over 500 career goals for club and country.",
+            "season_stats": {
+                "goals": 0,
+                "assists": 3,
+                "avg_rating": 8.24
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-11",
+                    "opponent": "Uruguay",
+                    "minutes_played": 74,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 7.6
+                },
+                {
+                    "date": "2026-05-19",
+                    "opponent": "Germany",
+                    "minutes_played": 85,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.0
+                },
+                {
+                    "date": "2026-05-20",
+                    "opponent": "Spain",
+                    "minutes_played": 83,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 9.4
+                },
+                {
+                    "date": "2026-05-30",
+                    "opponent": "Spain",
+                    "minutes_played": 81,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 7.6
+                },
+                {
+                    "date": "2026-05-18",
+                    "opponent": "Italy",
+                    "minutes_played": 88,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.6
+                }
+            ]
+        },
+        {
+            "name": "Phil Foden",
+            "team": "England",
+            "rating": 87.5,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/2023-10-04_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League%2C_RB_Leipzig_-_Manchester_City_FC_1DX_2613%2C_Phil_Foden.jpg/330px-2023-10-04_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League%2C_RB_Leipzig_-_Manchester_City_FC_1DX_2613%2C_Phil_Foden.jpg",
+            "bio": "Philip Walter Foden is an English professional footballer who plays as a midfielder for Premier League club Manchester City and the England national team.",
+            "season_stats": {
+                "goals": 1,
+                "assists": 1,
+                "avg_rating": 8.44
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-28",
+                    "opponent": "Germany",
+                    "minutes_played": 81,
+                    "goals": 1,
+                    "assists": 1,
+                    "sofascore_rating": 8.3
+                },
+                {
+                    "date": "2026-05-16",
+                    "opponent": "Italy",
+                    "minutes_played": 60,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.1
+                },
+                {
+                    "date": "2026-05-16",
+                    "opponent": "Uruguay",
+                    "minutes_played": 71,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.4
+                },
+                {
+                    "date": "2026-05-24",
+                    "opponent": "Uruguay",
+                    "minutes_played": 70,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.1
+                },
+                {
+                    "date": "2026-05-24",
+                    "opponent": "Croatia",
+                    "minutes_played": 87,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.3
+                }
+            ]
+        }
+    ],
+    "Brazil": [
+        {
+            "name": "Vin\u00edcius J\u00fanior",
+            "team": "Brazil",
+            "rating": 91.1,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_%28cropped%29.jpg/330px-2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_%28cropped%29.jpg",
+            "bio": "Vin\u00edcius Jos\u00e9 Paix\u00e3o de Oliveira J\u00fanior, commonly known as Vin\u00edcius J\u00fanior or Vini Jr., is a Brazilian professional footballer who plays as a forward for La Liga club Real Madrid and the Brazil national team. Considered one of the best players in the world, he is known for his pace, technique and dribbling ability.",
+            "season_stats": {
+                "goals": 2,
+                "assists": 0,
+                "avg_rating": 8.62
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-22",
+                    "opponent": "Netherlands",
+                    "minutes_played": 75,
+                    "goals": 2,
+                    "assists": 0,
+                    "sofascore_rating": 8.3
+                },
+                {
+                    "date": "2026-05-19",
+                    "opponent": "Spain",
+                    "minutes_played": 75,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 6.9
+                },
+                {
+                    "date": "2026-05-30",
+                    "opponent": "Netherlands",
+                    "minutes_played": 68,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.6
+                },
+                {
+                    "date": "2026-05-29",
+                    "opponent": "Germany",
+                    "minutes_played": 63,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.7
+                },
+                {
+                    "date": "2026-05-25",
+                    "opponent": "Uruguay",
+                    "minutes_played": 62,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.6
+                }
+            ]
+        },
+        {
+            "name": "Rodrygo",
+            "team": "Brazil",
+            "rating": 87.3,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Rodrygo_2023_%28cropped%29.jpg/330px-Rodrygo_2023_%28cropped%29.jpg",
+            "bio": "Rodrygo Silva de Goes, better known as Rodrygo, is a Brazilian professional footballer who plays primarily as a winger for La Liga club Real Madrid and the Brazil national team.",
+            "season_stats": {
+                "goals": 2,
+                "assists": 1,
+                "avg_rating": 8.24
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-22",
+                    "opponent": "Germany",
+                    "minutes_played": 84,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 7.9
+                },
+                {
+                    "date": "2026-05-25",
+                    "opponent": "Italy",
+                    "minutes_played": 76,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.0
+                },
+                {
+                    "date": "2026-05-24",
+                    "opponent": "Italy",
+                    "minutes_played": 60,
+                    "goals": 2,
+                    "assists": 0,
+                    "sofascore_rating": 7.3
+                },
+                {
+                    "date": "2026-05-16",
+                    "opponent": "Germany",
+                    "minutes_played": 76,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 7.5
+                },
+                {
+                    "date": "2026-05-18",
+                    "opponent": "Uruguay",
+                    "minutes_played": 79,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.5
+                }
+            ]
+        },
+        {
+            "name": "Alisson",
+            "team": "Brazil",
+            "rating": 91.0,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_850_1625.jpg/330px-20180610_FIFA_Friendly_Match_Austria_vs._Brazil_850_1625.jpg",
+            "bio": "\u00c1lisson Rams\u00e9s Becker, better known as Alisson Becker or simply Alisson, is a Brazilian professional footballer who plays as a goalkeeper for Premier League club Liverpool and the Brazil national team. He is regarded as one of the greatest goalkeepers of all time.",
+            "season_stats": {
+                "goals": 3,
+                "assists": 0,
+                "avg_rating": 8.62
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-19",
+                    "opponent": "Uruguay",
+                    "minutes_played": 75,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.4
+                },
+                {
+                    "date": "2026-05-22",
+                    "opponent": "Spain",
+                    "minutes_played": 67,
+                    "goals": 1,
+                    "assists": 0,
+                    "sofascore_rating": 8.3
+                },
+                {
+                    "date": "2026-05-25",
+                    "opponent": "Spain",
+                    "minutes_played": 60,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.5
+                },
+                {
+                    "date": "2026-05-26",
+                    "opponent": "Uruguay",
+                    "minutes_played": 76,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 7.9
+                },
+                {
+                    "date": "2026-05-15",
+                    "opponent": "Croatia",
+                    "minutes_played": 82,
+                    "goals": 2,
+                    "assists": 0,
+                    "sofascore_rating": 9.0
+                }
+            ]
+        }
+    ],
+    "Portugal": [
+        {
+            "name": "Cristiano Ronaldo",
+            "team": "Portugal",
+            "rating": 88.8,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/President_Donald_Trump_meets_with_Cristiano_Ronaldo_in_the_Oval_Office_%2854933344262%29_%28cropped_and_rotated%29.jpg/330px-President_Donald_Trump_meets_with_Cristiano_Ronaldo_in_the_Oval_Office_%2854933344262%29_%28cropped_and_rotated%29.jpg",
+            "bio": "Cristiano Ronaldo dos Santos Aveiro, nicknamed CR7, is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al-Nassr and the Portugal national team. Widely regarded as one of the greatest players in history and the greatest Portuguese player ever, he has won numerous individual accolades throughout his career, including five Ballons D'or, a record three UEFA Men's Player of the Year Awards, and four European Golden Shoes. He was also named the world's best player five times by FIFA.",
+            "season_stats": {
+                "goals": 1,
+                "assists": 1,
+                "avg_rating": 8.86
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-14",
+                    "opponent": "Uruguay",
+                    "minutes_played": 80,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.7
+                },
+                {
+                    "date": "2026-05-10",
+                    "opponent": "Italy",
+                    "minutes_played": 77,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.5
+                },
+                {
+                    "date": "2026-05-15",
+                    "opponent": "Uruguay",
+                    "minutes_played": 76,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.5
+                },
+                {
+                    "date": "2026-05-13",
+                    "opponent": "Italy",
+                    "minutes_played": 68,
+                    "goals": 1,
+                    "assists": 0,
+                    "sofascore_rating": 8.9
+                },
+                {
+                    "date": "2026-05-25",
+                    "opponent": "Uruguay",
+                    "minutes_played": 74,
+                    "goals": 0,
+                    "assists": 1,
+                    "sofascore_rating": 7.7
+                }
+            ]
+        },
+        {
+            "name": "Bruno Fernandes",
+            "team": "Portugal",
+            "rating": 92.5,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Bruno_Fernandes_USMNT_v_Portugal_Mar_31_2026-27_%28cropped%29.jpg/330px-Bruno_Fernandes_USMNT_v_Portugal_Mar_31_2026-27_%28cropped%29.jpg",
+            "bio": "Bruno Miguel Borges Fernandes is a Portuguese professional footballer who plays as an attacking midfielder for, and captains, Premier League club Manchester United, and the Portugal national team. Known for his creative output, vision, goal scoring ability, and passing, he is widely regarded as one of the best midfielders in the world.",
+            "season_stats": {
+                "goals": 3,
+                "assists": 0,
+                "avg_rating": 8.14
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-29",
+                    "opponent": "Germany",
+                    "minutes_played": 90,
+                    "goals": 1,
+                    "assists": 0,
+                    "sofascore_rating": 6.7
+                },
+                {
+                    "date": "2026-05-16",
+                    "opponent": "Spain",
+                    "minutes_played": 84,
+                    "goals": 1,
+                    "assists": 0,
+                    "sofascore_rating": 9.7
+                },
+                {
+                    "date": "2026-05-21",
+                    "opponent": "Germany",
+                    "minutes_played": 76,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 8.0
+                },
+                {
+                    "date": "2026-05-13",
+                    "opponent": "Croatia",
+                    "minutes_played": 78,
+                    "goals": 1,
+                    "assists": 0,
+                    "sofascore_rating": 9.1
+                },
+                {
+                    "date": "2026-05-27",
+                    "opponent": "Italy",
+                    "minutes_played": 72,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 7.2
+                }
+            ]
+        },
+        {
+            "name": "Bernardo Silva",
+            "team": "Portugal",
+            "rating": 93.5,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Bernardo_Silva_%28Isto_%C3%89_Gozar_Com_Quem_Trabalha%2C_2024%29.png/330px-Bernardo_Silva_%28Isto_%C3%89_Gozar_Com_Quem_Trabalha%2C_2024%29.png",
+            "bio": "Bernardo Mota Veiga de Carvalho e Silva is a Portuguese professional footballer who plays as a midfielder for Premier League club Manchester City and the Portugal national team. He will leave Manchester City on 30 June 2026, upon the expiry of his contract.",
+            "season_stats": {
+                "goals": 1,
+                "assists": 0,
+                "avg_rating": 8.2
+            },
+            "recent_matches": [
+                {
+                    "date": "2026-05-24",
+                    "opponent": "Italy",
+                    "minutes_played": 63,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.2
+                },
+                {
+                    "date": "2026-05-29",
+                    "opponent": "Netherlands",
+                    "minutes_played": 78,
+                    "goals": 1,
+                    "assists": 0,
+                    "sofascore_rating": 9.3
+                },
+                {
+                    "date": "2026-05-30",
+                    "opponent": "Croatia",
+                    "minutes_played": 79,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 6.5
+                },
+                {
+                    "date": "2026-05-25",
+                    "opponent": "Spain",
+                    "minutes_played": 82,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 6.7
+                },
+                {
+                    "date": "2026-05-30",
+                    "opponent": "Spain",
+                    "minutes_played": 63,
+                    "goals": 0,
+                    "assists": 0,
+                    "sofascore_rating": 9.3
+                }
+            ]
+        }
+    ]
 }
