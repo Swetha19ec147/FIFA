@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>FIFA World Cup 2026 AI Tracker & Match Predictor | Elite Sports Analytics</title>
+    <meta name="description" content="Track the FIFA World Cup 2026 live. Predict tournament match outcomes, simulate group stages, explore knockout brackets, and view detailed match history logs for elite players.">
+    <meta name="keywords" content="fifa world cup 2026, world cup predictor, football simulation, match statistics, player match history, soccer elo rankings, tournament simulator">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://visionary-fifa-predictor.netlify.app/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://visionary-fifa-predictor.netlify.app/">
+    <meta property="og:title" content="FIFA World Cup 2026 AI Tracker & Match Predictor | Elite Sports Analytics">
+    <meta property="og:description" content="Track the FIFA World Cup 2026 live. Predict tournament match outcomes, simulate group stages, explore knockout brackets, and view detailed match history logs for elite players.">
+    <meta property="og:image" content="https://visionary-fifa-predictor.netlify.app/static/images/hero_banner.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://visionary-fifa-predictor.netlify.app/">
+    <meta property="twitter:title" content="FIFA World Cup 2026 AI Tracker & Match Predictor | Elite Sports Analytics">
+    <meta property="twitter:description" content="Track the FIFA World Cup 2026 live. Predict tournament match outcomes, simulate group stages, explore knockout brackets, and view detailed match history logs for elite players.">
+    <meta property="twitter:image" content="https://visionary-fifa-predictor.netlify.app/static/images/hero_banner.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js for real-time win probability dynamics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- jQuery and Select2 for Advanced Custom Dropdowns -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Custom CSS Styling -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+    <!-- JSON-LD Structured Data (Sports Portal SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsWebSite",
+      "name": "FIFA World Cup 2026 AI Tracker & Predictor",
+      "url": "https://visionary-fifa-predictor.netlify.app/",
+      "description": "An advanced sports analytics platform offering World Cup 2026 outcome forecasting, tournament group simulators, and elite player profiles.",
+      "genre": "Soccer, Football, Sports Analytics",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Sports Fans, Data Scientists, Bettors"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Live World Cup Match Ticker Banner -->
+    <div class="match-ticker-bar">
+        <div class="ticker-title">WORLD CUP 2026</div>
+        <div class="ticker-scroll-container">
+            <div class="ticker-wrapper" id="ticker-matches-container">
+                <span class="ticker-match"><span class="ticker-dot"></span> USA 0 - 0 COL (LIVE)</span>
+                <span class="ticker-match">ARG 2 - 1 CRO</span>
+                <span class="ticker-match">FRA 3 - 1 NED</span>
+                <span class="ticker-match">BRA 2 - 0 ITA</span>
+                <span class="ticker-match">ENG 1 - 0 POR</span>
+                <span class="ticker-match">ESP 2 - 2 DEN</span>
+                <span class="ticker-match">GER 3 - 0 CHI</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="app-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="logo-icon">🏆</span>
+                <div class="logo-text">
+                    <span class="brand-name">FIFA 26 Tracker</span>
+                    <span class="sub-brand">AI PREDICTOR HUB</span>
+                </div>
+            </div>
+            <nav class="app-nav">
+                <button class="nav-tab active" id="tab-predictor" onclick="switchTab('predictor')">AI Predictor</button>
+                <button class="nav-tab" id="tab-simulator" onclick="switchTab('simulator')">World Cup Live Center</button>
+                <button class="nav-tab" id="tab-players" onclick="switchTab('players')">Elite Players Hub</button>
+                <button class="nav-tab" id="tab-leaderboards" onclick="switchTab('leaderboards')">Leaderboards</button>
+                <button class="nav-tab" id="tab-manual" onclick="switchTab('manual')">User Manual</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FIFA '26 Match Schedule List Carousel -->
+    <div style="background: var(--bg-card); border-bottom: 1px solid var(--border-color); padding: 1rem 0; overflow: hidden; width: 100%;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h3 style="margin-bottom: 0.75rem; font-size: 1rem; color: var(--accent-brand);">📅 Upcoming FIFA '26 Match Schedule</h3>
+            <div style="display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 0.5rem; scrollbar-width: thin;">
+                <!-- Schedule Cards -->
+                <div style="min-width: 200px; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--border-radius); background: var(--bg-dark); box-shadow: var(--shadow-premium);">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">11 Jun 2026 - Group A</div>
+                    <div style="display: flex; justify-content: space-between; font-weight: 700;"><span>USA</span> <span>vs</span> <span>COL</span></div>
+                </div>
+                <div style="min-width: 200px; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--border-radius); background: var(--bg-dark); box-shadow: var(--shadow-premium);">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">12 Jun 2026 - Group B</div>
+                    <div style="display: flex; justify-content: space-between; font-weight: 700;"><span>ENG</span> <span>vs</span> <span>POR</span></div>
+                </div>
+                <div style="min-width: 200px; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--border-radius); background: var(--bg-dark); box-shadow: var(--shadow-premium);">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">13 Jun 2026 - Group C</div>
+                    <div style="display: flex; justify-content: space-between; font-weight: 700;"><span>ARG</span> <span>vs</span> <span>CRO</span></div>
+                </div>
+                <div style="min-width: 200px; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--border-radius); background: var(--bg-dark); box-shadow: var(--shadow-premium);">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">14 Jun 2026 - Group D</div>
+                    <div style="display: flex; justify-content: space-between; font-weight: 700;"><span>FRA</span> <span>vs</span> <span>NED</span></div>
+                </div>
+                <div style="min-width: 200px; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--border-radius); background: var(--bg-dark); box-shadow: var(--shadow-premium);">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">15 Jun 2026 - Group E</div>
+                    <div style="display: flex; justify-content: space-between; font-weight: 700;"><span>BRA</span> <span>vs</span> <span>ITA</span></div>
+                </div>
+                <div style="min-width: 200px; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--border-radius); background: var(--bg-dark); box-shadow: var(--shadow-premium);">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">16 Jun 2026 - Group F</div>
+                    <div style="display: flex; justify-content: space-between; font-weight: 700;"><span>ESP</span> <span>vs</span> <span>DEN</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <!-- Tab 1: AI Predictor -->
+        <section id="section-predictor" class="content-section active">
+            <div class="portal-hero">
+                <div class="hero-tag">AI OUTCOME FORECAST</div>
+                <h1>FIFA World Cup 2026 Pre-Match Predictor</h1>
+                <p>Select any two national teams from the 48 qualified World Cup countries. Our neural prediction model runs calculations based on international Elo ratings, rolling squad forms, and head-to-head records.</p>
+            </div>
+
+            <div class="portal-grid">
+                <!-- Main Predictor Box -->
+                <div class="portal-main-col">
+                    <div class="glass-card main-widget">
+                        <div class="widget-header">
+                            <h2 class="widget-title">🤖 Match Forecasting Engine</h2>
+                            <div class="widget-badge">World Cup Edition</div>
+                        </div>
+                        
+                        <!-- Visual Football Jersey Display -->
+                        <div class="predictor-jersey-preview">
+                            <div class="jersey-wrapper">
+                                <div class="football-jersey" id="jersey-home-preview">
+                                    <div class="jersey-body">
+                                        <div class="jersey-neck"></div>
+                                        <div class="jersey-stripe"></div>
+                                        <div class="jersey-sponsor">FIFA 26</div>
+                                    </div>
+                                    <div class="jersey-sleeve left"></div>
+                                    <div class="jersey-sleeve right"></div>
+                                </div>
+                                <div class="jersey-team-name" id="jersey-lbl-home-name">Home Team</div>
+                            </div>
+                            
+                            <div class="vs-badge">VS</div>
+                            
+                            <div class="jersey-wrapper">
+                                <div class="football-jersey" id="jersey-away-preview">
+                                    <div class="jersey-body">
+                                        <div class="jersey-neck"></div>
+                                        <div class="jersey-stripe"></div>
+                                        <div class="jersey-sponsor">FIFA 26</div>
+                                    </div>
+                                    <div class="jersey-sleeve left"></div>
+                                    <div class="jersey-sleeve right"></div>
+                                </div>
+                                <div class="jersey-team-name" id="jersey-lbl-away-name">Away Team</div>
+                            </div>
+                        </div>
+
+                        <form id="match-predictor-form" onsubmit="handlePredictSubmit(event)">
+                            <div class="form-group-grid">
+                                <div class="form-group">
+                                    <label for="home-select">Home Team</label>
+                                    <select id="home-select" class="team-select" style="width: 100%;" required></select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="away-select">Away Team</label>
+                                    <select id="away-select" class="team-select" style="width: 100%;" required></select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="btn-calculate-predictions">Calculate AI Forecast</button>
+                        </form>
+
+                        <!-- Pre-Match Result Container -->
+                        <div id="pre-match-result" class="pre-match-result hidden">
+                            <div class="prediction-probabilities">
+                                <div class="prob-bar-container">
+                                    <div class="prob-label">Home Win: <span id="lbl-prob-home">0%</span></div>
+                                    <div class="prob-bar bg-home" id="bar-prob-home" style="width: 0%"></div>
+                                </div>
+                                <div class="prob-bar-container">
+                                    <div class="prob-label">Draw: <span id="lbl-prob-draw">0%</span></div>
+                                    <div class="prob-bar bg-draw" id="bar-prob-draw" style="width: 0%"></div>
+                                </div>
+                                <div class="prob-bar-container">
+                                    <div class="prob-label">Away Win: <span id="lbl-prob-away">0%</span></div>
+                                    <div class="prob-bar bg-away" id="bar-prob-away" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="predicted-score-badge">
+                                Predicted Score: <span id="lbl-predicted-score">0-0</span>
+                            </div>
+                            <div class="xg-badge">
+                                Expected Goals: <span id="lbl-xg-home">0.0</span> vs <span id="lbl-xg-away">0.0</span>
+                            </div>
+                            
+                            <!-- Powerplayer Dashboard -->
+                            <div id="powerplayer-dashboard" style="margin-top: 1rem; padding: 1rem; background: var(--bg-card-hover); border-radius: var(--border-radius); border: 1px solid var(--border-color); display: none;">
+                                <h4 style="color: var(--accent-gold); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">🌟 Powerplayer of the Match</h4>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <div style="font-weight: 700; font-size: 1.1rem; color: var(--text-primary);" id="lbl-powerplayer-name">Player Name</div>
+                                        <div style="font-size: 0.8rem; color: var(--text-muted);" id="lbl-powerplayer-team">Team Name</div>
+                                    </div>
+                                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent-brand);" id="lbl-powerplayer-rating">9.5</div>
+                                </div>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;" id="lbl-powerplayer-reason">Reasoning...</p>
+                            </div>
+
+                            <div class="quick-action" style="display:flex; justify-content:center; margin-top: 1rem;">
+                                <button class="btn btn-accent" id="btn-quick-sim" onclick="launchQuickSimulation()">Load Match in Live Center ⚡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Analytics Factors -->
+                <div class="portal-side-col">
+                    <div class="glass-card side-widget">
+                        <div class="widget-header">
+                            <h2 class="widget-title">📐 AI Prediction Insights</h2>
+                        </div>
+                        <div class="stats-list" id="prediction-factors-container">
+                            <div class="timeline-placeholder">Submit a matchup to generate detailed predictive stats...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 2: World Cup 2026 Live Center (Groups & Bracket) -->
+        <section id="section-simulator" class="content-section">
+            <div class="portal-hero">
+                <div class="hero-tag">LIVE STADIUM</div>
+                <h1>FIFA 2026 Tournament Match Center</h1>
+                <p>Simulate groups A to L, calculate standings live, and advance to the Knockout Stage. Experience live scores, real-time in-play odds shifts, and BBC-style commentary.</p>
+            </div>
+
+            <!-- Live Tracker Mode Toggle -->
+            <div class="mode-selector-panel" style="display:flex; flex-direction:column; align-items:center; margin-bottom: 2rem;">
+                <div class="sub-tabs" style="margin-bottom: 1rem;">
+                    <button class="sub-tab active" id="mode-simulated" onclick="switchTrackerMode('simulated')">🧪 Simulated Match Engine</button>
+                    <button class="sub-tab" id="mode-live" onclick="switchTrackerMode('live')">📡 Real-World Live Tracker</button>
+                </div>
+                
+                <div id="live-api-key-panel" class="glass-card hidden" style="display:none; width: 100%; max-width: 600px; padding: 1.5rem; border: 1px solid var(--accent-primary);">
+                    <h3 style="margin-bottom: 0.5rem; color: var(--accent-primary);">Real-World Tracker Settings</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Enter your API-Football key. If left blank, the system will use mock live data for demonstration.</p>
+                    <div style="display:flex; gap: 0.5rem;">
+                        <input type="password" id="api-key-input" placeholder="Enter API-Football Key (Optional)" style="flex:1; padding: 0.5rem; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.5); color: white;">
+                        <button class="btn btn-primary" onclick="saveApiKey()">Save Key</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Tabs to toggle between Group Stage and Knockout Stage -->
+            <div class="sub-tabs" style="margin-bottom: 1.5rem;">
+                <button class="sub-tab active" id="tab-tourney-groups" onclick="switchTourneyView('groups')">Group Stage (A-L)</button>
+                <button class="sub-tab" id="tab-tourney-bracket" onclick="switchTourneyView('bracket')">Knockout Brackets</button>
+            </div>
+
+            <!-- Tourney Grid: Left contains Group/Knockout simulation UI, Right contains live Match Center -->
+            <div class="portal-grid">
+                
+                <!-- Left Pane: Tournament Standings & Brackets -->
+                <div class="portal-main-col">
+                    
+                    <!-- Group Stage Panel -->
+                    <div id="tourney-view-groups" class="tourney-view-section active">
+                        <div class="glass-card">
+                            <div class="widget-header">
+                                <h2 class="widget-title">🏆 Groups Standings Table</h2>
+                                <div class="group-switcher-panel">
+                                    <label for="select-group-id" style="font-size:0.75rem; font-weight:700; color:var(--text-secondary); margin-right:0.5rem;">Group:</label>
+                                    <select id="select-group-id" class="team-select" style="width:120px; display:inline-block; padding:0.35rem 0.5rem;" onchange="handleGroupChange(this.value)">
+                                        <option value="Group A">Group A</option>
+                                        <option value="Group B">Group B</option>
+                                        <option value="Group C">Group C</option>
+                                        <option value="Group D">Group D</option>
+                                        <option value="Group E">Group E</option>
+                                        <option value="Group F">Group F</option>
+                                        <option value="Group G">Group G</option>
+                                        <option value="Group H">Group H</option>
+                                        <option value="Group I">Group I</option>
+                                        <option value="Group J">Group J</option>
+                                        <option value="Group K">Group K</option>
+                                        <option value="Group L">Group L</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Standings Table -->
+                            <div class="table-responsive">
+                                <table class="standings-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Pos</th>
+                                            <th>Team</th>
+                                            <th>P</th>
+                                            <th>W</th>
+                                            <th>D</th>
+                                            <th>L</th>
+                                            <th>GD</th>
+                                            <th>Pts</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="group-standings-tbody">
+                                        <!-- Loaded via JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Group Matches -->
+                            <div style="margin-top: 1.5rem;">
+                                <h3 style="color:#fff; font-size:1rem; margin-bottom:0.75rem;">Group Fixtures</h3>
+                                <div class="match-list" id="group-fixtures-container">
+                                    <!-- Loaded via JS -->
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+                                <button class="btn btn-primary" onclick="simulateSelectedGroup()">Simulate Group matches</button>
+                                <button class="btn btn-secondary" onclick="simulateAllGroups()">Simulate All Groups</button>
+                                <button class="btn btn-accent" id="btn-advance-knockout" onclick="advanceToKnockouts()" disabled>Advance to Knockout Stage 🏆</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Knockout Stage Panel -->
+                    <div id="tourney-view-bracket" class="tourney-view-section">
+                        <div class="glass-card">
+                            <div class="widget-header">
+                                <h2 class="widget-title">🌳 Knockout Stage bracket</h2>
+                                <button class="btn btn-secondary" style="padding:0.35rem 0.75rem; font-size:0.75rem;" onclick="simulateFullKnockout()">Simulate Rest of Bracket</button>
+                            </div>
+                            
+                            <!-- Interactive Bracket Visual -->
+                            <div class="bracket-scroll-container">
+                                <div class="bracket-wrapper" id="bracket-bracket-visual">
+                                    <div class="timeline-placeholder" style="margin-top: 2rem;">Simulate all group stage matches to generate the Knockout Bracket.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Real-World Live Matches Panel (Hidden by default) -->
+                    <div id="tourney-view-live" class="tourney-view-section" style="display:none;">
+                        <div class="glass-card">
+                            <div class="widget-header">
+                                <h2 class="widget-title">📡 Live Match Feed</h2>
+                                <button class="btn btn-secondary" style="padding:0.35rem 0.75rem; font-size:0.75rem;" onclick="fetchLiveMatches()"><span id="live-refresh-icon">🔄</span> Refresh</button>
+                            </div>
+                            <div class="match-list" id="real-live-matches-container">
+                                <div class="timeline-placeholder">Select Real-World Live Tracker to fetch live fixtures.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Pane: Match Center Scoreboard & Live Trackers -->
+                <div class="portal-side-col">
+                    <div class="glass-card sim-header-card">
+                        <!-- Pitch background -->
+                        <div class="pitch-container-bg">
+                            <div class="pitch-line center-circle"></div>
+                            <div class="pitch-line half-way"></div>
+                            <div class="pitch-line penalty-box home"></div>
+                            <div class="pitch-line penalty-box away"></div>
+                        </div>
+
+                        <div class="sim-teams-display">
+                            <div class="sim-team home">
+                                <div class="football-jersey" id="sim-jersey-home">
+                                    <div class="jersey-body">
+                                        <div class="jersey-neck"></div>
+                                        <div class="jersey-stripe"></div>
+                                        <div class="jersey-sponsor">FIFA</div>
+                                    </div>
+                                    <div class="jersey-sleeve left"></div>
+                                    <div class="jersey-sleeve right"></div>
+                                </div>
+                                <h3 id="sim-lbl-home-name">Home Team</h3>
+                                <span class="sim-team-elo" id="sim-lbl-home-elo">Elo: -</span>
+                            </div>
+                            
+                            <div class="sim-scoreline">
+                                <div class="sim-goals" id="sim-lbl-goals">0 - 0</div>
+                                <div class="sim-time" id="sim-lbl-time">Not Started</div>
+                            </div>
+                            
+                            <div class="sim-team away">
+                                <div class="football-jersey" id="sim-jersey-away">
+                                    <div class="jersey-body">
+                                        <div class="jersey-neck"></div>
+                                        <div class="jersey-stripe"></div>
+                                        <div class="jersey-sponsor">FIFA</div>
+                                    </div>
+                                    <div class="jersey-sleeve left"></div>
+                                    <div class="jersey-sleeve right"></div>
+                                </div>
+                                <h3 id="sim-lbl-away-name">Away Team</h3>
+                                <span class="sim-team-elo" id="sim-lbl-away-elo">Elo: -</span>
+                            </div>
+                        </div>
+
+                        <div class="sim-controls">
+                            <button class="btn btn-primary" id="btn-start-sim" onclick="toggleSimulation()">Start Simulation</button>
+                            <button class="btn btn-secondary" id="btn-reset-sim" onclick="resetSimulation()" disabled>Reset Match</button>
+                            <div class="speed-selector">
+                                <label for="select-sim-speed">Speed:</label>
+                                <select id="select-sim-speed">
+                                    <option value="1000" selected>Normal</option>
+                                    <option value="500">Fast</option>
+                                    <option value="100">Super Fast</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Real-Time AI chart -->
+                    <div class="glass-card" style="margin-top: 1.5rem;">
+                        <h3 class="widget-title" style="margin-bottom:0.5rem; font-size:1rem;">📈 Real-Time AI Win Probability</h3>
+                        <div class="chart-container" style="position: relative; height:180px; width:100%">
+                            <canvas id="live-prediction-chart"></canvas>
+                        </div>
+                        <div class="live-prob-ticker" id="live-probability-ticker-panel">
+                            <div class="prob-box home"><span class="box-name" id="lbl-live-box-home-name">Home</span> <span id="lbl-live-box-home-val">33%</span></div>
+                            <div class="prob-box draw"><span class="box-name">Draw</span> <span id="lbl-live-box-draw-val">33%</span></div>
+                            <div class="prob-box away"><span class="box-name" id="lbl-live-box-away-name">Away</span> <span id="lbl-live-box-away-val">34%</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Commentary & Statistics Tabs -->
+                    <div class="glass-card" style="margin-top: 1.5rem; padding: 1rem;">
+                        <div class="sub-tabs">
+                            <button class="sub-tab active" id="subtab-events" onclick="switchSubTab('events')">Match Events</button>
+                            <button class="sub-tab" id="subtab-stats" onclick="switchSubTab('stats')">Match Stats</button>
+                        </div>
+                        
+                        <div class="sub-tab-content active" id="subtab-content-events" style="max-height: 250px; overflow-y: auto;">
+                            <div class="events-timeline" id="events-timeline-container">
+                                <div class="timeline-placeholder">Commentary updates will appear here...</div>
+                            </div>
+                        </div>
+
+                        <div class="sub-tab-content" id="subtab-content-stats" style="max-height: 250px; overflow-y: auto;">
+                            <div class="stats-panel" id="stats-panel-container">
+                                <div class="stat-row">
+                                    <div class="stat-val home" id="lbl-stat-possession-home">50%</div>
+                                    <div class="stat-name">Possession</div>
+                                    <div class="stat-val away" id="lbl-stat-possession-away">50%</div>
+                                </div>
+                                <div class="stat-bar-outer"><div class="stat-bar-inner" id="bar-stat-possession" style="width: 50%"></div></div>
+
+                                <div class="stat-row">
+                                    <div class="stat-val home" id="lbl-stat-shots-home">0</div>
+                                    <div class="stat-name">Shots</div>
+                                    <div class="stat-val away" id="lbl-stat-shots-away">0</div>
+                                </div>
+                                <div class="stat-bar-outer"><div class="stat-bar-inner" id="bar-stat-shots" style="width: 50%"></div></div>
+
+                                <div class="stat-row">
+                                    <div class="stat-val home" id="lbl-stat-sot-home">0</div>
+                                    <div class="stat-name">Shots on Target</div>
+                                    <div class="stat-val away" id="lbl-stat-sot-away">0</div>
+                                </div>
+                                <div class="stat-bar-outer"><div class="stat-bar-inner" id="bar-stat-sot" style="width: 50%"></div></div>
+
+                                <div class="stat-row">
+                                    <div class="stat-val home" id="lbl-stat-corners-home">0</div>
+                                    <div class="stat-name">Corners</div>
+                                    <div class="stat-val away" id="lbl-stat-corners-away">0</div>
+                                </div>
+                                <div class="stat-bar-outer"><div class="stat-bar-inner" id="bar-stat-corners" style="width: 50%"></div></div>
+
+                                <div class="stat-row">
+                                    <div class="stat-val home" id="lbl-stat-reds-home">0</div>
+                                    <div class="stat-name">Red Cards</div>
+                                    <div class="stat-val away" id="lbl-stat-reds-away">0</div>
+                                </div>
+                                <div class="stat-bar-outer"><div class="stat-bar-inner" id="bar-stat-reds" style="width: 50%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 3: Elite Players Hub -->
+        <section id="section-players" class="content-section">
+            <div class="portal-hero">
+                <div class="hero-tag">STAR PLAYERS</div>
+                <h1>World Cup Elite Players Hub</h1>
+                <p>Track the form, stats, and historical match logs of the world's most elite international footballers competing in the FIFA World Cup.</p>
+            </div>
+
+            <div class="portal-grid">
+                <!-- Left Pane: Selector and Player Bio Card -->
+                <div class="portal-main-col">
+                    <div class="glass-card">
+                        <div class="widget-header">
+                            <h2 class="widget-title">👤 Select Player Profile</h2>
+                            <select id="player-select-hub" class="team-select" style="width: 250px;" onchange="handlePlayerHubChange(this.value)"></select>
+                        </div>
+
+                        <!-- Player Bio Profile card -->
+                        <div class="player-profile-card-layout" id="player-bio-card-container">
+                            <!-- Loaded via JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Pane: Match Histories logs -->
+                <div class="portal-side-col">
+                    <div class="glass-card">
+                        <h2 class="widget-title" style="margin-bottom:0.5rem;">🗓️ Chronological Match Logs</h2>
+                        <p class="subtitle">Detailed performance stats across the latest international matches.</p>
+                        
+                        <div class="table-responsive">
+                            <table class="standings-table" style="font-size:0.8rem;">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Match</th>
+                                        <th>Rating</th>
+                                        <th>Goals</th>
+                                        <th>Assists</th>
+                                        <th>Min</th>
+                                        <th>Cards</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="player-matchlogs-tbody">
+                                    <!-- Loaded via JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab: Leaderboards -->
+        <section id="section-leaderboards" class="content-section">
+            <div class="portal-hero">
+                <div class="hero-tag">GLOBAL RANKINGS</div>
+                <h1>Leaderboards & Powerful Player Board</h1>
+                <p>Track the real-time global standings of the best national teams and the most powerful players based on their tournament form and AI predictions.</p>
+            </div>
+            
+            <div class="portal-grid">
+                <!-- Team Leaderboard -->
+                <div class="portal-main-col">
+                    <div class="glass-card main-widget">
+                        <div class="widget-header">
+                            <h2 class="widget-title">🌍 Global Team Leaderboard</h2>
+                        </div>
+                        <table class="group-standings-table" style="margin-top: 1rem;">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Team</th>
+                                    <th>Elo Rating</th>
+                                    <th>xG Power</th>
+                                </tr>
+                            </thead>
+                            <tbody id="team-leaderboard-body">
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Powerful Player Board -->
+                <div class="portal-side-col">
+                    <div class="glass-card side-widget">
+                        <div class="widget-header">
+                            <h2 class="widget-title">⚡ Powerful Player Board</h2>
+                        </div>
+                        <div class="stats-list" id="player-leaderboard-list">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab: User Manual -->
+        <section id="section-manual" class="content-section">
+            <div class="glass-card" style="margin-bottom: 1.5rem;">
+                <h1 class="card-title">📖 FIFA World Cup AI Simulator User Manual</h1>
+                <p class="subtitle">A dynamic, interactive guide outlining model architectures, simulator instructions, and tournament brackets.</p>
+            </div>
+            
+            <div class="manual-dashboard-layout">
+                <div class="manual-sidebar">
+                    <h2 class="manual-nav-title">Chapters</h2>
+                    <nav class="manual-nav-list" id="manual-chapters-list">
+                        <!-- Loaded via JS -->
+                    </nav>
+                </div>
+                <div class="manual-main-display">
+                    <div id="manual-content-view">
+                        <!-- Loaded via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 FIFA World Cup 2026 AI Predictor. Inspired by FotMob, PredictAMatch, and PFN. Designed with a custom obsidian dark football theme, full media responsive grid templates, and in-browser Poisson engines.</p>
+        </div>
+    </footer>
+
+    <!-- Frontend Javascript Logic -->
+    <script src="/static/js/model_data.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
