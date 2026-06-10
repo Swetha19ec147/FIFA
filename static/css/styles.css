@@ -1,29 +1,19 @@
 :root {
-    --bg-dark: #f8fafc; /* Main background - off white */
-    --bg-card: rgba(15, 20, 35, 0.75); /* Pure white cards */
-    --bg-card-hover: rgba(25, 35, 55, 0.85);
-    --border-color: rgba(255, 255, 255, 0.15);
-    --border-glow: rgba(0, 71, 187, 0.25);
+    --bg-dark: #0A0A0C;
+    --bg-card: #111216;
+    --border-color: #2A2B30;
+    --text-main: #FFFFFF;
+    --text-muted: #8E92A3;
+    --accent-brand: #CCFF00; /* Neon Lime */
+    --accent-green: #00B16A;
+    --accent-red: #FF3333;
+    --accent-gold: #FFD700;
     
-    --text-primary: #000000; /* Near black text for readability */
-    --text-secondary: #333333; /* Dark gray */
-    --text-muted: #555555;
-    
-    --accent-home: #0047BB; /* Deep FIFA Blue */
-    --accent-draw: #64748b; /* Slate */
-    --accent-away: #e11d48; /* Crimson */
-    --accent-brand: #ffcc00; /* FIFA Primary Brand */
-    --accent-gold: #ffaa00; /* World Cup Trophy Gold */
-    --accent-glow: rgba(0, 71, 187, 0.2);
-    
-    --font-main: 'Inter', sans-serif;
-    --font-display: 'Outfit', sans-serif;
-    
-    --transition-fast: 0.15s ease;
-    --transition-norm: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --border-radius: 20px;
-    --shadow-premium: 0 4px 12px rgba(0, 0, 0, 0.08); /* Clean modern shadow instead of dark glow */
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Inter', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 
 /* Reset & Basics */
 * {
@@ -38,7 +28,7 @@ body {
         linear-gradient(90deg, rgba(0, 71, 187, 0.02) 50%, transparent 50%);
     background-size: 80px 100%;
     color: var(--text-primary);
-    font-family: var(--font-main);
+    font-family: var(--font-body);
     line-height: 1.5;
     min-height: 100vh;
     display: flex;
@@ -2026,8 +2016,59 @@ h1, h2, h3, .nav-tab {
 }
 
 /* Custom Variables Update */
-:root {
-    --accent-magenta: #FF0055;
-    --accent-neon-blue: #00F0FF;
-    --accent-gold: #FFD700;
+
+
+h1, h2, h3, h4, h5, h6, .nav-tab, .btn-primary {
+    font-family: var(--font-heading) !important;
+    text-transform: uppercase;
+}
+
+/* Reference UI Overrides */
+.content-section, .timeline-event, .player-card, .group-card, .stat-card, .prediction-results {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    backdrop-filter: none !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+
+body {
+    background: var(--bg-dark) !important;
+}
+
+.btn-primary {
+    background: var(--accent-brand) !important;
+    color: #000000 !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 0.8rem 1.5rem !important;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+.btn-primary:hover {
+    transform: translateY(-2px) !important;
+    filter: brightness(1.2);
+    box-shadow: 0 0 15px rgba(204, 255, 0, 0.4) !important;
+}
+
+.live-dot.pulse {
+    background: var(--accent-red) !important;
+    animation: intensePulseRed 2s infinite !important;
+}
+
+@keyframes intensePulseRed {
+    0% { box-shadow: 0 0 0 0 rgba(255, 51, 51, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 51, 51, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 51, 51, 0); }
+}
+
+.match-score, .match-team, .bracket-team-score {
+    font-family: var(--font-heading) !important;
+}
+
+/* Remove the old magenta/gold hover glows */
+.timeline-event:hover, .player-card:hover, .group-card:hover, .match-item:hover {
+    border-color: var(--accent-brand) !important;
+    box-shadow: 0 5px 15px rgba(204, 255, 0, 0.1) !important;
+    transform: translateY(-4px) scale(1.01) !important;
 }
