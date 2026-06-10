@@ -2104,10 +2104,14 @@ let GLOBAL_PLAYERS_DB = {};
 
 async function loadPlayersData() {
     try {
-        const response = await fetch('/static/data/players_db.json');
-        GLOBAL_PLAYERS_DB = await response.json();
+        const response = await fetch(`${API_BASE}/players`);
+        if (response.ok) {
+            GLOBAL_PLAYERS_DB = await response.json();
+        } else {
+            console.warn("Failed to load players from backend");
+        }
     } catch (err) {
-        console.warn("Failed to load players_db.json, using fallback mocks.", err);
+        console.warn("Backend unavailable for players data.", err);
     }
 }
 
@@ -2188,9 +2192,33 @@ function initLiveTrackingSSE() {
 }
 
 // Ensure these run on load
+
+async function initMatchSchedule() {
+    try {
+        const response = await fetch(`${API_BASE}/schedule`);
+        if(response.ok) {
+            const data = await response.json();
+            const container = document.getElementById('ticker-wrapper');
+            if (container && data.schedule) {
+                container.innerHTML = '';
+                data.schedule.forEach(match => {
+                    container.innerHTML += `<div class="ticker-item"><span class="live-dot pulse"></span> ${match.home} vs ${match.away} | ${match.date} | ${match.stadium}</div>`;
+                });
+            }
+        }
+    } catch(err) {
+        console.error("Live Tracker Schedule failed:", err);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadPlayersData().then(() => {
         populateLeaderboards();
     });
-    initLiveTrackingSSE();
+    initMatchSchedule();
+    
+    // Setup live polling every 10 seconds for real-time tracking
+    setInterval(() => {
+        initMatchSchedule();
+    }, 10000);
 });
