@@ -216,14 +216,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1.5rem 2rem 2rem 2rem;
 }
 
-.content-section {
-    display: none;
-}
 
-.content-section.active {
-    display: block;
-    animation: fadeIn 0.35s ease-out;
-}
+
+
 
 /* Hero Section */
 .portal-hero {
