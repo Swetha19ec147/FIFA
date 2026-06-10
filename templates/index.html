@@ -93,6 +93,21 @@
         </div>
     </header>
 
+    <!-- FIFA.COM STYLE HERO CAROUSEL -->
+    <div class="fifa-hero-banner">
+        <div class="fifa-hero-content">
+            <div class="hero-tag">FIFA World Cup 26™</div>
+            <h1 class="hero-title-main">PREDICT. SIMULATE. DOMINATE.</h1>
+            <p class="hero-desc">Experience the ultimate AI-powered Match Center. Live tracking, Elo forecasts, and real-time brackets for the 48-nation tournament.</p>
+            <div class="hero-buttons">
+                <a href="#section-predictor" class="btn btn-primary" style="text-decoration:none;">Launch AI Predictor</a>
+                <a href="#section-simulator" class="btn btn-outline" style="text-decoration:none; color:white; border-color:white;">Live Match Center</a>
+            </div>
+        </div>
+        <div class="hero-gradient-overlay"></div>
+    </div>
+
+
     <!-- FIFA '26 Match Schedule List Carousel -->
     <div style="background: var(--bg-card); border-bottom: 1px solid var(--border-color); padding: 1rem 0; overflow: hidden; width: 100%;">
         <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
@@ -363,7 +378,7 @@
                     </div>
 
                     <!-- Real-World Live Matches Panel (Hidden by default) -->
-                    <div id="tourney-view-live" class="tourney-view-section" style="display:none;">
+                    <div id="tourney-view-live" class="tourney-view-section" >
                         <div class="glass-card">
                             <div class="widget-header">
                                 <h2 class="widget-title">📡 Live Match Feed</h2>
@@ -624,7 +639,38 @@
                 </div>
             </div>
         </section>
-    </main>
+    
+    <section id="section-news" class="content-section">
+        <h2 style="font-size:2rem; margin-bottom:1.5rem; border-bottom:1px solid var(--border-color); padding-bottom:0.5rem;">Latest News & Highlights</h2>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            <div class="glass-card" style="padding:0; overflow:hidden;">
+                <div style="height:200px; background: url('/static/img/stadium_bg.png') center/cover;"></div>
+                <div style="padding:1rem;">
+                    <div style="font-size:0.8rem; color:var(--accent-gold); margin-bottom:0.5rem;">TOURNAMENT NEWS</div>
+                    <h3 style="margin-bottom:0.5rem;">Groups Drawn for 48-Team Format</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">The path to glory is set. Check out the group stage matchups in the Live Center.</p>
+                </div>
+            </div>
+            <div class="glass-card" style="padding:0; overflow:hidden;">
+                <div style="height:200px; background: url('/static/img/player_visionary.png') center/cover;"></div>
+                <div style="padding:1rem;">
+                    <div style="font-size:0.8rem; color:var(--accent-gold); margin-bottom:0.5rem;">PLAYER FOCUS</div>
+                    <h3 style="margin-bottom:0.5rem;">Mbappé Eyes Golden Boot</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">With the expanded tournament, top strikers are looking to break scoring records.</p>
+                </div>
+            </div>
+            <div class="glass-card" style="padding:0; overflow:hidden;">
+                <div style="height:200px; background: #111; display:flex; align-items:center; justify-content:center;">▶</div>
+                <div style="padding:1rem;">
+                    <div style="font-size:0.8rem; color:var(--accent-gold); margin-bottom:0.5rem;">VIDEO HIGHLIGHTS</div>
+                    <h3 style="margin-bottom:0.5rem;">AI Predicts Shock Final</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">Watch our latest simulation breakdown of the knockout bracket.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
 
     <footer class="app-footer">
         <div class="footer-container">
